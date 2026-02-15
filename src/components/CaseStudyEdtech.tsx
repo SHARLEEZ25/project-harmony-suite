@@ -1,58 +1,30 @@
-import edtech1 from "@/assets/edtech-1.png";
-import edtech2 from "@/assets/edtech-2.png";
-import edtech3 from "@/assets/edtech-3.png";
-import edtech4 from "@/assets/edtech-4.png";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import edtechImage from "@/assets/edtech-1.png";
 
 const CaseStudyEdtech = () => (
-  <section className="px-6 py-16 max-w-4xl mx-auto">
-    <h2 className="text-3xl md:text-4xl font-bold font-heading text-foreground mb-4">
-      EdTech Platform for Internships &amp; Courses
-    </h2>
-
-    <div className="flex flex-wrap gap-6 text-sm text-muted-foreground mb-6">
-      <p><strong className="text-foreground">Industry:</strong> Education Technology</p>
-      <p><strong className="text-foreground">Timeline:</strong> 8 weeks</p>
-      <p><strong className="text-foreground">Role:</strong> Full-Stack Developer</p>
-    </div>
-
-    <div className="space-y-6">
-      <div>
-        <h3 className="text-xl font-heading font-semibold text-foreground mb-2">The Challenge</h3>
-        <p className="text-muted-foreground leading-relaxed">
-          Client needed a hybrid platform combining internship marketplace (like Internshala) with online learning (like Coursera).
-        </p>
-      </div>
-
-      <div>
-        <h3 className="text-xl font-heading font-semibold text-foreground mb-2">What We Built</h3>
-        <ul className="space-y-2 text-muted-foreground list-disc list-inside">
-          <li>Secure authentication system with role-based access control</li>
-          <li>AI recommendation engine with vector embeddings for semantic skill matching</li>
-          <li>Application management and tracking workflows</li>
-          <li>Recruiter pipeline with shortlist, review, and status updates</li>
-          <li>Scalable backend APIs and optimized database architecture</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 className="text-xl font-heading font-semibold text-foreground mb-2">Outcome</h3>
-        <p className="text-muted-foreground leading-relaxed">
-          Delivered production-ready MVP in 8 weeks as solo developer. Platform architecture designed to scale to 10,000+ concurrent users.
-        </p>
-      </div>
-
-      <div>
-        <h3 className="text-xl font-heading font-semibold text-foreground mb-4">Design Flow</h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[edtech1, edtech2, edtech3, edtech4].map((img, i) => (
-            <img
-              key={i}
-              src={img}
-              alt={`EdTech design ${i + 1}`}
-              className="rounded-lg border border-border w-full h-auto object-cover"
-              loading="lazy"
-            />
-          ))}
+  <section className="w-full px-6 py-24 md:py-32 bg-background border-b border-border/40">
+    <div className="max-w-screen-2xl mx-auto w-full">
+      <div className="flex flex-col lg:flex-row gap-16 items-center">
+        <div className="lg:w-1/2 order-2 lg:order-1">
+          <div className="aspect-video bg-muted rounded-2xl overflow-hidden border border-border">
+            <img src={edtechImage} alt="EdTech Platform Dashboard" className="w-full h-full object-cover" />
+          </div>
+        </div>
+        <div className="lg:w-1/2 order-1 lg:order-2">
+          <span className="text-primary font-semibold tracking-wide uppercase text-sm mb-4 block">Case Study</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-6">
+            EdTech Platform for Internships
+          </h2>
+          <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+            EdTech recruitment platform with AI matching engine (Natural.js), application tracking system, and interview scheduler. React + Node.js + PostgreSQL. 8-week solo build.
+          </p>
+          <Link to="/projects/edtech">
+            <Button variant="outline" size="lg" className="text-lg">
+              View Details <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

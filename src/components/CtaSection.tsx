@@ -1,37 +1,32 @@
-const helpItems = [
-  { title: "Custom Internal Tools", desc: "Systems tailored to your specific operational workflows" },
-  { title: "Full-Stack Product Builds", desc: "End-to-end platform development from concept to production" },
-  { title: "Early-Stage MVP Execution", desc: "Rapid validation and iteration for new product concepts" },
-  { title: "Workflow Automation", desc: "Eliminating manual processes for ops-heavy teams" },
-];
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { FadeIn } from "@/components/ui/fade-in";
+import { motion } from "framer-motion";
 
 const CtaSection = () => (
-  <section className="px-6 py-16 max-w-4xl mx-auto">
-    <hr className="border-border mb-12" />
-    <h2 className="text-3xl md:text-4xl font-bold font-heading text-foreground mb-8">
-      How We Can Help
-    </h2>
-    <div className="grid sm:grid-cols-2 gap-6 mb-12">
-      {helpItems.map((item) => (
-        <div key={item.title} className="bg-card rounded-xl p-5 border border-border">
-          <h3 className="font-heading font-semibold text-foreground mb-1">{item.title}</h3>
-          <p className="text-sm text-muted-foreground">{item.desc}</p>
-        </div>
-      ))}
+  <section className="w-full px-6 py-24 md:py-32 bg-[#000000] text-white overflow-hidden">
+    <div className="max-w-screen-2xl mx-auto w-full text-center">
+      <FadeIn direction="up">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-8">
+          How We Can Help
+        </h2>
+      </FadeIn>
+      <FadeIn delay={0.1} direction="up">
+        <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
+          If you have a real problem that needs a real system, we can help. We partner with founders and businesses who value execution over promises.
+        </p>
+      </FadeIn>
+      <FadeIn delay={0.2} direction="up">
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <Button asChild size="lg" className="bg-[#E5C992] hover:bg-[#D4B881] text-black text-lg px-8 py-6 h-auto shadow-lg transition-all rounded-md">
+            <a href="https://wa.me/917845565637" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              Contact Me <ArrowRight className="w-5 h-5" />
+            </a>
+          </Button>
+        </motion.div>
+      </FadeIn>
     </div>
-
-    <p className="text-muted-foreground leading-relaxed mb-6">
-      If you have a real problem that needs a real system, we can help. We partner with founders and engineering leaders who value execution over promises.
-    </p>
-
-    <a
-      href="https://wa.me/7845565637"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity"
-    >
-      Get in Touch
-    </a>
   </section>
 );
 

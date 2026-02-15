@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,47 +6,57 @@
 
 @layer base {
   :root {
-    --background: 240 14% 95%;
-    --foreground: 220 20% 25%;
+    /* Base - Dark Theme */
+    --background: 0 0% 7%;
+    /* #121212 - Deep Black/Charcoal */
+    --foreground: 40 20% 94%;
+    /* #F5F2EC - Off-white/Cream */
 
-    --card: 235 20% 92%;
-    --card-foreground: 220 20% 25%;
+    /* Cards & Surfaces */
+    --card: 0 0% 10%;
+    /* #1A1A1A */
+    --card-foreground: 40 20% 94%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 25%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 40 20% 94%;
 
-    --primary: 220 20% 25%;
-    --primary-foreground: 240 14% 95%;
+    /* Brand - Gold/Bronze */
+    --primary: 37 42% 61%;
+    /* #C5A572 - Bronze/Gold */
+    --primary-foreground: 0 0% 10%;
+    /* Dark text on gold button */
 
-    --secondary: 235 20% 92%;
-    --secondary-foreground: 220 20% 25%;
+    --secondary: 0 0% 15%;
+    /* #262626 */
+    --secondary-foreground: 40 20% 94%;
 
-    --muted: 235 15% 88%;
-    --muted-foreground: 220 10% 46%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 235 20% 92%;
-    --accent-foreground: 220 20% 25%;
+    --accent: 37 42% 61%;
+    --accent-foreground: 0 0% 10%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 40 20% 94%;
 
-    --border: 230 15% 85%;
-    --input: 230 15% 85%;
-    --ring: 220 20% 25%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 37 42% 61%;
 
     --radius: 0.5rem;
 
-    --font-heading: 'Playfair Display', Georgia, serif;
-    --font-body: 'Source Sans 3', system-ui, sans-serif;
+    /* Typography - Updated to Sans-Serif */
+    --font-heading: 'Inter', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 0 0% 7%;
+    --sidebar-foreground: 40 20% 94%;
+    --sidebar-primary: 37 42% 61%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 37 42% 61%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 37 42% 61%;
   }
 }
 
@@ -60,7 +70,12 @@
     font-family: var(--font-body);
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-heading);
   }
 }

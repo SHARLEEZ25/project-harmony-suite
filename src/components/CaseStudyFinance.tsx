@@ -1,41 +1,31 @@
-import finance1 from "@/assets/finance-1.png";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import financeImage from "@/assets/finance-1.png";
 
 const CaseStudyFinance = () => (
-  <section className="px-6 py-16 max-w-4xl mx-auto">
-    <h2 className="text-3xl md:text-4xl font-bold font-heading text-foreground mb-4">
-      Internal Workflow Tool — Finance &amp; Compliance
-    </h2>
-
-    <div className="space-y-6">
-      <div>
-        <h3 className="text-xl font-heading font-semibold text-foreground mb-2">The Problem</h3>
-        <p className="text-muted-foreground leading-relaxed">
-          Finance teams needed to replace manual compliance tracking (spreadsheets, email chains) causing missed deadlines and documentation loss.
-        </p>
-      </div>
-
-      <div>
-        <h3 className="text-xl font-heading font-semibold text-foreground mb-2">What We're Building</h3>
-        <ul className="space-y-2 text-muted-foreground list-disc list-inside">
-          <li>Centralized dashboard with task tracking, calendar views, and reminder interfaces</li>
-          <li>Role-based designs for different team permission levels and workflows</li>
-          <li>Document attachment UI and proof-of-completion interaction patterns</li>
-          <li>Escalation indicators with visual priority system for overdue items</li>
-        </ul>
-      </div>
-
-      <img
-        src={finance1}
-        alt="Finance workflow dashboard"
-        className="rounded-lg border border-border w-full h-auto"
-        loading="lazy"
-      />
-
-      <div>
-        <h3 className="text-xl font-heading font-semibold text-foreground mb-2">Current Status</h3>
-        <p className="text-muted-foreground leading-relaxed">
-          MVP and validation stage with core functionality deployed for testing with real operations teams.
-        </p>
+  <section className="w-full px-6 py-24 md:py-32 bg-background">
+    <div className="max-w-screen-2xl mx-auto w-full">
+      <div className="flex flex-col lg:flex-row gap-16 items-center">
+        <div className="lg:w-1/2 order-2 lg:order-1">
+          <div className="aspect-video bg-muted rounded-2xl overflow-hidden border border-border">
+            <img src={financeImage} alt="Financial Dashboard" className="w-full h-full object-cover" />
+          </div>
+        </div>
+        <div className="lg:w-1/2 order-1 lg:order-2">
+          <span className="text-primary font-semibold tracking-wide uppercase text-sm mb-4 block">Case Study</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-6">
+            Finance & Compliance Tool
+          </h2>
+          <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+            Centralized internal workflow platform for automated compliance tracking and task management. Currently in the MVP validation stage with core functionality deployed for operations testing.
+          </p>
+          <Link to="/projects/finance">
+            <Button variant="outline" size="lg" className="text-lg">
+              View Details <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
   </section>

@@ -1,84 +1,30 @@
-import ott1 from "@/assets/ott-1.jpg";
-import ott2 from "@/assets/ott-2.jpg";
-import ott3 from "@/assets/ott-3.jpg";
-import ott4 from "@/assets/ott-4.jpg";
-
-const steps = [
-  { num: "01", title: "Upload Video", desc: "Creator uploads video content to platform (existing workflow)" },
-  { num: "02", title: "Generate Posters", desc: 'Click "Generate Poster" button, AI analyzes video in background' },
-  { num: "03", title: "Review Options", desc: "View 5-10 AI-generated poster variations from best frames (30-60 seconds)" },
-  { num: "04", title: "Customize", desc: "Select preferred poster, optionally adjust text overlays and filters" },
-  { num: "05", title: "Save & Use", desc: "One-click save to media library, ready for marketing without leaving platform" },
-];
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import ottImage from "@/assets/ott-1.jpg";
 
 const CaseStudyOtt = () => (
-  <section className="px-6 py-16 max-w-4xl mx-auto">
-    <h2 className="text-3xl md:text-4xl font-bold font-heading text-foreground mb-4">
-      OTT Platform for Short Films &amp; Creator Discovery
-    </h2>
-
-    <div className="flex flex-wrap gap-6 text-sm text-muted-foreground mb-6">
-      <p><strong className="text-foreground">Industry:</strong> Media & Entertainment / OTT Streaming</p>
-      <p><strong className="text-foreground">Timeline:</strong> 3 weeks (R&D Prototype)</p>
-      <p><strong className="text-foreground">Role:</strong> Full-Stack Developer & Product Designer</p>
-    </div>
-
-    <div className="space-y-6">
-      <div>
-        <h3 className="text-xl font-heading font-semibold text-foreground mb-2">The Challenge</h3>
-        <p className="text-muted-foreground leading-relaxed">
-          An existing OTT platform for short films needed to solve a critical creator pain point: generating eye-catching promotional posters for their content. Creators using external AI tools for posters = context switching, workflow friction, wasted time.
-        </p>
-      </div>
-
-      <div>
-        <h3 className="text-xl font-heading font-semibold text-foreground mb-2">What We Built</h3>
-        <p className="text-foreground font-semibold mb-2">AI-Powered Poster Generation Module</p>
-        <ul className="space-y-2 text-muted-foreground list-disc list-inside">
-          <li>Full-stack application with React TypeScript frontend and Node.js Express backend</li>
-          <li>Hugging Face AI integration for intelligent frame analysis, aesthetic scoring, and scene detection</li>
-          <li>FFmpeg video processing pipeline with automated frame extraction and poster generation</li>
-          <li>Complete UI/UX design for seamless in-platform workflow and real-time processing status</li>
-          <li>REST API with MongoDB persistence, JWT authentication, and asynchronous job queue architecture</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 className="text-xl font-heading font-semibold text-foreground mb-2">Outcome</h3>
-        <ul className="space-y-1 text-muted-foreground list-disc list-inside">
-          <li>Eliminated external tool switching through in-platform AI integration</li>
-          <li>Validated technical feasibility and established production-ready architecture</li>
-          <li>Delivered functional prototype with performance benchmarks and expansion roadmap</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 className="text-xl font-heading font-semibold text-foreground mb-4">Creator Journey</h3>
-        <div className="space-y-4">
-          {steps.map((s) => (
-            <div key={s.num} className="flex items-start gap-4">
-              <span className="text-2xl font-heading font-bold text-muted-foreground">{s.num}</span>
-              <div>
-                <p className="font-semibold text-foreground">{s.title}</p>
-                <p className="text-sm text-muted-foreground">{s.desc}</p>
-              </div>
-            </div>
-          ))}
+  <section className="w-full px-6 py-24 md:py-32 bg-secondary/5 border-b border-border/40">
+    <div className="max-w-screen-2xl mx-auto w-full">
+      <div className="flex flex-col lg:flex-row gap-16 items-center">
+        <div className="lg:w-1/2 order-1 md:order-1">
+          <span className="text-primary font-semibold tracking-wide uppercase text-sm mb-4 block">Case Study</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-6">
+            AI Poster Generation for OTT
+          </h2>
+          <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+            Integrated an AI-powered module into an OTT platform to automate promotional poster creation. Built a 3-week prototype using Hugging Face and FFmpeg for intelligent scene detection and frame analysis.
+          </p>
+          <Link to="/projects/ott">
+            <Button variant="outline" size="lg" className="text-lg">
+              View Details <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </Link>
         </div>
-      </div>
-
-      <div>
-        <h3 className="text-xl font-heading font-semibold text-foreground mb-4">Design Flow</h3>
-        <div className="grid grid-cols-2 gap-4">
-          {[ott1, ott2, ott3, ott4].map((img, i) => (
-            <img
-              key={i}
-              src={img}
-              alt={`OTT design ${i + 1}`}
-              className="rounded-lg border border-border w-full h-auto object-cover"
-              loading="lazy"
-            />
-          ))}
+        <div className="lg:w-1/2 order-2 md:order-2">
+          <div className="aspect-video bg-muted rounded-2xl overflow-hidden border border-border shadow-2xl">
+            <img src={ottImage} alt="OTT Platform Interface" className="w-full h-full object-cover" />
+          </div>
         </div>
       </div>
     </div>
@@ -86,3 +32,5 @@ const CaseStudyOtt = () => (
 );
 
 export default CaseStudyOtt;
+
+
