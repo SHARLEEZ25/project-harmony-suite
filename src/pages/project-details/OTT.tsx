@@ -23,7 +23,7 @@ const OTT = () => {
 
                 <div className="mb-12">
                     <FadeIn>
-                        <h1 className="text-4xl md:text-6xl font-bold font-heading mb-6 text-foreground">Next-Gen OTT Platform</h1>
+                        <h1 className="text-3xl md:text-6xl font-bold font-heading mb-4 md:mb-6 text-foreground">Next-Gen OTT Platform</h1>
                         <p className="text-xl text-muted-foreground max-w-3xl mb-8">
                             A high-performance streaming service with an integrated AI-Powered Poster Generation Module for content creators.
                         </p>
@@ -120,7 +120,7 @@ const OTT = () => {
                 </div>
 
                 <FadeIn>
-                    <h3 className="text-3xl font-bold text-foreground mb-8">Interface Design</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6 md:mb-8">Interface Design</h3>
                 </FadeIn>
                 <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-6" delayChildren={0.2}>
                     <FadeIn delay={0.1}>

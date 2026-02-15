@@ -12,12 +12,12 @@ const HeroSection = () => (
   <section className="w-full px-6 py-24 md:py-32 min-h-[50vh] flex flex-col justify-center bg-background border-b border-border/40">
     <div className="max-w-screen-2xl mx-auto w-full">
       <FadeIn>
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-heading text-foreground leading-tight mb-8 max-w-5xl">
+        <h1 className="text-3xl md:text-7xl lg:text-8xl font-bold font-heading text-foreground leading-tight mb-6 md:mb-8 max-w-5xl">
           Software Systems &amp; Product Development
         </h1>
       </FadeIn>
       <FadeIn delay={0.2}>
-        <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl leading-relaxed mb-12">
+        <p className="text-lg md:text-2xl text-muted-foreground max-w-4xl leading-relaxed mb-8 md:mb-12">
           We build custom software products and internal systems designed to address specific operational challenges. Our approach focuses on technical clarity and practical implementation to deliver tools that improve organizational workflows.
         </p>
       </FadeIn>

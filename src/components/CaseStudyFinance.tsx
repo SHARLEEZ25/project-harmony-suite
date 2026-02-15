@@ -14,11 +14,11 @@ const CaseStudyFinance = () => (
         </div>
         <div className="lg:w-1/2 order-1 lg:order-2">
           <span className="text-primary font-semibold tracking-wide uppercase text-sm mb-4 block">Case Study</span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-6">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-6">
             Finance & Compliance Tool
           </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-            Centralized internal workflow platform for automated compliance tracking and task management. Currently in the MVP validation stage with core functionality deployed for operations testing.
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
+            Centralized internal workflow platform for automated compliance tracking and task management. Currently in the MVP validation stage with core functionality deployed for testing with real operations teams.
           </p>
           <Link to="/projects/finance">
             <Button variant="outline" size="lg" className="text-lg">

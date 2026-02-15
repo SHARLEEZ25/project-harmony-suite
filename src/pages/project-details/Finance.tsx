@@ -20,7 +20,7 @@ const Finance = () => {
 
                 <div className="mb-12">
                     <FadeIn>
-                        <h1 className="text-4xl md:text-6xl font-bold font-heading mb-6 text-foreground">Finance & Compliance Tool</h1>
+                        <h1 className="text-3xl md:text-6xl font-bold font-heading mb-4 md:mb-6 text-foreground">Finance & Compliance Tool</h1>
                         <p className="text-xl text-muted-foreground max-w-3xl mb-8">
                             A centralized internal workflow platform designed to automate compliance tracking and financial approval processes.
                         </p>

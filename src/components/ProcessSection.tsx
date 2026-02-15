@@ -16,10 +16,10 @@ const ProcessSection = () => (
       <div className="flex flex-col lg:flex-row gap-16 lg:items-center">
         <div className="lg:w-1/2">
           <FadeIn direction="right">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-8">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-6 md:mb-8">
               How We Work
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               We follow a transparent, iterative process to ensure your project is delivered on time and meets your core objectives. From initial concept to validation, we keep you informed every step of the way.
             </p>
           </FadeIn>
@@ -34,7 +34,7 @@ const ProcessSection = () => (
                 <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
                   {index + 1}
                 </span>
-                <span className="text-xl font-medium">{step}</span>
+                <span className="text-lg md:text-xl font-medium">{step}</span>
                 <CheckCircle2 className="w-6 h-6 text-green-500 ml-auto" />
               </motion.div>
             </FadeIn>

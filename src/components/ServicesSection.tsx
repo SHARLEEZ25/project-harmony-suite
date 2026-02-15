@@ -29,7 +29,7 @@ const ServicesSection = () => (
   <section className="w-full px-6 py-24 md:py-32 bg-secondary/20">
     <div className="max-w-screen-2xl mx-auto w-full">
       <FadeIn>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-16">
+        <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-12 md:mb-16">
           What We Build
         </h2>
       </FadeIn>
@@ -42,7 +42,7 @@ const ServicesSection = () => (
             >
               <service.icon className="w-12 h-12 text-primary mb-6" />
               <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-              <p className="text-muted-foreground text-lg leading-relaxed">
+              <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
                 {service.description}
               </p>
             </motion.div>

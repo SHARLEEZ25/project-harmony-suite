@@ -14,10 +14,10 @@ const CaseStudyEdtech = () => (
         </div>
         <div className="lg:w-1/2 order-1 lg:order-2">
           <span className="text-primary font-semibold tracking-wide uppercase text-sm mb-4 block">Case Study</span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-6">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-6">
             EdTech Platform for Internships
           </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
             EdTech recruitment platform with AI matching engine (Natural.js), application tracking system, and interview scheduler. React + Node.js + PostgreSQL. 8-week solo build.
           </p>
           <Link to="/projects/edtech">

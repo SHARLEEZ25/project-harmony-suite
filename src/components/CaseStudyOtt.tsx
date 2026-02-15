@@ -9,10 +9,10 @@ const CaseStudyOtt = () => (
       <div className="flex flex-col lg:flex-row gap-16 items-center">
         <div className="lg:w-1/2 order-1 md:order-1">
           <span className="text-primary font-semibold tracking-wide uppercase text-sm mb-4 block">Case Study</span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-6">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold font-heading text-foreground mb-6">
             AI Poster Generation for OTT
           </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
             Integrated an AI-powered module into an OTT platform to automate promotional poster creation. Built a 3-week prototype using Hugging Face and FFmpeg for intelligent scene detection and frame analysis.
           </p>
           <Link to="/projects/ott">
