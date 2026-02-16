@@ -1,8 +1,7 @@
-# Welcome to your Lovable project
+# HodoTech - Harmony Suite
 
-## Project info
-
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Project Info
+Premium Digital Solutions for Finance, EdTech, and OTT.
 
 ## How can I edit this code?
 
