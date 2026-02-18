@@ -13,9 +13,6 @@ const Footer = () => {
                         <div className="flex items-center gap-2 mb-6">
                             <span className="text-2xl font-bold font-heading text-foreground tracking-tight">HodoTech</span>
                         </div>
-                        <p className="text-muted-foreground text-lg max-w-md mb-8 leading-relaxed">
-                            We specialize in building custom software systems and product prototypes for founders and businesses who value practical implementation.
-                        </p>
                         <div className="flex flex-wrap gap-4">
                             <a
                                 href="https://www.linkedin.com/company/HodoTech/"

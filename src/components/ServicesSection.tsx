@@ -1,27 +1,27 @@
-import { Code2, Layout, Rocket, Workflow } from "lucide-react";
+import { Cpu, Rocket, Shield, Workflow } from "lucide-react";
 import { FadeIn } from "@/components/ui/fade-in";
 import { motion } from "framer-motion";
 
 const services = [
   {
-    icon: Layout,
-    title: "Full-Stack Web Applications",
-    description: "Role-based platforms, operational dashboards, and secure portals. We handle authentication, data management, and complex user workflows end-to-end.",
+    icon: Workflow,
+    title: "Intelligent Operational Systems",
+    description: "We design systems that combine software + automation + AI to run core business workflows. We build systems that think, route, notify, enforce, and scale.",
   },
   {
     icon: Rocket,
-    title: "Product MVPs & Platforms",
-    description: "From initial concept to production-ready systems. We focus on building functional prototypes and modular architectures that support ongoing iteration.",
+    title: "AI-Integrated Product Launch",
+    description: "Partnering with founders to operationalize AI-ready products. Architecture built for AI integration and backends designed for scale from day one.",
   },
   {
-    icon: Workflow,
-    title: "Operational & Workflow Systems",
-    description: "Replacing spreadsheets and manual tracking with integrated software. We build systems that streamline operations and eliminate bottlenecks.",
+    icon: Shield,
+    title: "Execution Infrastructure",
+    description: "Replacing fragile spreadsheets with execution infrastructure. Approval chains, monitoring dashboards, and AI-assisted decision layers to eliminate bottlenecks.",
   },
   {
-    icon: Code2,
-    title: "Key Technologies",
-    description: "React, Node.js, Python, TypeScript, AWS, and more.",
+    icon: Cpu,
+    title: "Systems Architecture & AI",
+    description: "Intersection of software architecture and AI orchestration. We choose tools based on business leverage, building long-term evolution into every layer.",
   },
 ];
 
@@ -38,11 +38,13 @@ const ServicesSection = () => (
           <FadeIn key={service.title} delay={index * 0.1} fullWidth>
             <motion.div
               whileHover={{ y: -8 }}
-              className="bg-background p-8 rounded-2xl border border-border hover:border-primary/50 transition-colors h-full shadow-sm hover:shadow-xl"
+              className="bg-background p-8 rounded-2xl border border-border hover:border-primary/50 transition-colors h-full shadow-sm hover:shadow-xl group"
             >
-              <service.icon className="w-12 h-12 text-primary mb-6" />
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                <service.icon className="w-8 h-8 text-primary" />
+              </div>
               <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-              <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+              <p className="text-muted-foreground text-base leading-relaxed">
                 {service.description}
               </p>
             </motion.div>
